@@ -1,0 +1,28 @@
+@import './keyframes.scss';
+
+.youtube {
+    position: absolute;
+    background-image: linear-gradient(bottom, #6D0202 20%, #f00 70%);
+    color: #fff;
+    top: calc(50% - 110px);
+    left: calc(50% - 125px);
+    width: 250px;
+    height: 235px;
+    border-radius: 40% / 9%;
+    animation: press 2s alternate 1;
+
+    &:before {
+        content: '\25ba';
+        background: inherit;
+        text-indent: 30%;
+        line-height: 1.3;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 275px;
+        height: 195px;
+        transform: translate(-50%, -50%);
+        font-size: 10rem;
+        border-radius: 5% / 45%;
+    }
+}

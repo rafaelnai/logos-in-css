@@ -1,0 +1,50 @@
+@import "./keyframes.scss";
+$react: #61dafb;
+
+%radius {border-radius: 50%}
+%absolute {position: absolute}
+%react-rings {
+    border: 10px solid $react;
+    height: 250px;
+    width: 80px;
+}
+
+.react {
+    @extend %absolute;
+    @extend %react-rings;
+    @extend %radius;
+    top: calc(50% - 160px);
+    left: calc(50% - 60px);
+    animation: spin 10s linear infinite;
+
+    &:before {
+        content: '';
+        @extend %absolute;
+        @extend %react-rings;
+        @extend %radius;
+        left: -10%;
+        top: -3%;
+        transform: rotate(120deg);
+    }
+
+    &:after {
+        content: '';
+        @extend %absolute;
+        @extend %react-rings;
+        @extend %radius;
+        right: -10%;
+        top: -3%;
+        transform: rotate(-120deg);   
+    }
+    
+    .react-dot {
+        @extend %absolute;
+        @extend %radius;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        width: 50px;
+        height: 50px;
+        background-color: $react;
+    }
+}

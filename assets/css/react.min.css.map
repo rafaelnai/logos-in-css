@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,AAAC,CACD,MAAM,CAAE,CAAC,CACZ",
+    "sources": [
+        "../../stylesheets/react.scss"
+    ],
+    "names": [],
+    "file": "react.min.css"
+}
