@@ -1,9 +1,8 @@
 const Navbar = () => {
 
-    const links = ['React','Youtube'];
+    const links = ['React','Youtube', 'Instagram'];
     const navbar = document.querySelector('#navbar');
     const content = document.querySelector('#content');
-    const toggle = document.querySelector('.toggle-menu');
 
     const toggleMenu = () => {
 
