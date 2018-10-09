@@ -1,4 +1,3 @@
-@import "./keyframes.scss";
 $react: #61dafb;
 
 %radius {border-radius: 50%}
@@ -13,8 +12,8 @@ $react: #61dafb;
     @extend %absolute;
     @extend %react-rings;
     @extend %radius;
-    top: calc(50% - 160px);
-    left: calc(50% - 60px);
+    top: calc(50% - 125px);
+    left: calc(50% - 40px);
     animation: spin 10s linear infinite;
 
     &:before {
